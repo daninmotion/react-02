@@ -1,23 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import MyTitle from './MyTitle'
+import {render} from 'react-dom' //This is saying the only thing i need from reac-dom is the render function.
+import '../public/normalize.css'
+import '../public/style.css'
 
-var div = React.DOM.div
-
-var MyTitleFactory = React.createFactory(MyTitle)
-
-var MyFirstComponent = React.createClass({
-	render: function () {
+const App = React.createClass({
+	render () {
 		return (
-			div(null,
-				MyTitleFactory({title: 'props are the best', color: 'peru'}),
-				MyTitleFactory({title: 'semicolons are the worst', color: 'mediumaquamarine'}),
-				MyTitleFactory({title: 'js', color: 'tomato'}),
-				MyTitleFactory({title: 'im out of ideas', color: 'rebeccapurple'})
-			)
+			<div className='app'>
+				<div className='landing'>
+					<h1>svideo</h1>
+					<input type='text' placeholder='search' />
+					<a>or Browse All</a>
+				</div>
+			</div>
 		)
 	}
 })
 
-//Here we are telling React to render MyFirstComponent inside of the id app
-ReactDOM.render(React.createElement(MyFirstComponent), document.getElementById('app'))
+render(<App />, document.getElementById('app'))
