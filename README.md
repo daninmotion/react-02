@@ -6,4 +6,4 @@ Familiarizing myself with the basics of:
 - Redux
 - Webpack
 
-Class was thought by [gh-page]: http://btholt.github.io/complete-intro-to-react/
+Class was taught by Brian Holt, Senior UI Engineer at Netflix: http://btholt.github.io/complete-intro-to-react/
