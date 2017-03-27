@@ -1,0 +1,1 @@
+export const SET_SEAERCH_TERM = 'SET_SEARCH_TERM'
