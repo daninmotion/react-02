@@ -13,7 +13,9 @@
     "dev": "webpack-dev-server",
     "lint": "eslint js/**/*.js server.js",
     "watch": "webpack --watch",
-    "cover": "npm run test -- --coverage"
+    "cover": "npm run test -- --coverage",
+    "start": "NODE_ENV=server node server.js",
+    "deploy": "surge --project public --domain https://vidnetstream.surge.sh"
   },
   "dependencies": {
     "axios": "0.15.2",
